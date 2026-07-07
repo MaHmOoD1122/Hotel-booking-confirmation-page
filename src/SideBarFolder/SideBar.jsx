@@ -1,4 +1,5 @@
 import "./SideBar.css";
+import Divider from "../Divider/Divider";
 import logo from "../assets/images/logo.svg";
 import bedIcon from "../assets/images/icon-bed.svg";
 import houseIcon from "../assets/images/icon-house.svg";
@@ -11,7 +12,7 @@ export default function SideBar() {
       <a href="#" className="logo-link">
         <img src={logo} alt="The logo" className="logo-img" />
       </a>
-      <span className="list-divider"></span>
+      <Divider type="solid" borderColor="var(--neutral-400)" />
       <ul className="sidebar-list">
         <SideBarItem
           icon={bedIcon}

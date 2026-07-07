@@ -21,13 +21,14 @@
 }
 .sidebar-item {
   margin-block-end: 2.6rem;
+  padding: 1rem;
   list-style: none;
   transition: all 0.3s;
   display: flex;
   height: 4rem;
   outline: none;
   padding-left: 1rem;
-  border-radius: 0.6rem;
+  border-radius: 0.8rem;
   align-items: center;
 }
 .sidebar-item:hover {
@@ -37,6 +38,7 @@
   text-decoration: none;
   color: var(--neutral-900);
   width: 100%;
+  height: inherit;
   font-size: 2rem;
   align-items: center;
   display: flex;

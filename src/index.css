@@ -1,5 +1,5 @@
 /* src/index.css */
-
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
 :root {
   /* Neutral Colors */
   --neutral-900: hsl(33, 15%, 15%);
@@ -27,6 +27,11 @@
   /* Blue & Rose */
   --blue-500: hsl(230, 49%, 56%);
   --rose-500: hsl(340, 48%, 52%);
+
+  /* Fonts */
+  --fraunces: "Fraunces", serif;
+  --dm-mono: "DM Mono", monospace;
+  --dm-sans: "DM Sans", sans-serif;
 }
 * {
   margin: 0;

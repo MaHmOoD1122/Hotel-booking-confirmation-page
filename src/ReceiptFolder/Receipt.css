@@ -1,0 +1,31 @@
+.receipt-card {
+  max-width: 24rem;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0rem 2rem 2rem rgba(0, 0, 0, 0.1);
+  transform: rotate(-5deg);
+}
+.receipt-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.receipt-dates {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 1rem 0;
+}
+.check-in,
+.check-out {
+  font-family: var(--dm-sans);
+}
+.date {
+  font-family: var(--fraunces);
+  font-size: 2.5rem;
+}
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
