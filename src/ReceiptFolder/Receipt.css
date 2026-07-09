@@ -1,5 +1,5 @@
 .receipt-card {
-  max-width: 24rem;
+  max-width: 42rem;
   padding: 1.5rem;
   border-radius: 1.5rem;
   box-shadow: 0rem 2rem 2rem rgba(0, 0, 0, 0.1);
@@ -11,21 +11,79 @@
   width: 100%;
   justify-content: space-between;
 }
+.header-title {
+  color: var(--neutral-600);
+  font-family: var(--dm-mono);
+  letter-spacing: 1px;
+}
+.header-message {
+  font-size: 2.1rem;
+  margin-block-start: 0.5rem;
+}
+.header-right {
+  display: flex;
+  gap: 0.3rem;
+  flex-direction: column;
+  align-items: flex-end;
+  color: var(--neutral-600);
+  font-family: var(--dm-mono);
+}
+.check-in-title,
+.check-out-title {
+  color: var(--neutral-600);
+}
 .receipt-dates {
   display: flex;
   justify-content: space-around;
   text-align: center;
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 .check-in,
 .check-out {
   font-family: var(--dm-sans);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
 }
 .date {
   font-family: var(--fraunces);
-  font-size: 2.5rem;
+  font-size: 2.8rem;
+}
+.time {
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  color: var(--neutral-800);
 }
 .space-between {
   display: flex;
   justify-content: space-between;
+}
+.cost-in-parts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  font-size: 1.4rem;
+  font-family: "DM Mono";
+  margin-block-end: 2.2rem;
+}
+.total-cost-details {
+  align-items: center;
+  margin-block-end: 2.3rem;
+}
+.total-cost-title {
+  font-size: 1.3rem;
+  font-family: "DM Mono";
+  letter-spacing: 1px;
+  color: var(--neutral-600);
+}
+.total-cost {
+  font-size: 2rem;
+  font-family: "Fraunces";
+}
+.receipt-footer {
+  display: flex;
+  align-items: center;
+  color: var(--neutral-600);
+  font-family: "DM Mono";
+  font-size: 1.2rem;
 }

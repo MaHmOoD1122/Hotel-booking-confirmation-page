@@ -1,6 +1,7 @@
 import Divider from "../Divider/Divider";
 import FancyText from "../FancyText";
 import "./Receipt.css";
+import barcodeIcon from "../assets/images/icon-barcode.svg";
 export default function Receipt() {
   return (
     <div className="receipt-card">
@@ -17,14 +18,14 @@ export default function Receipt() {
       <Divider type="dashed" borderColor="var(--neutral-400)" />
       <div className="receipt-dates">
         <div className="check-in">
-          <FancyText tag="p" text="CHECK IN" />
+          <FancyText tag="p" text="CHECK IN" className="check-in-title" />
           <FancyText tag="p" text="25 Apr" className="date" />
-          <FancyText tag="p" text="Saturday · 15:00" />
+          <FancyText tag="p" text="Saturday · 15:00" className="time" />
         </div>
         <div className="check-out">
-          <FancyText tag="p" text="CHECK OUT" />
+          <FancyText tag="p" text="CHECK OUT" className="check-out-title" />
           <FancyText tag="p" text="29 Apr" className="date" />
-          <FancyText tag="p" text="Wednesday · 11:00" />
+          <FancyText tag="p" text="Wednesday · 11:00" className="time" />
         </div>
       </div>
       <Divider type="dashed" borderColor="var(--neutral-400)" />
@@ -45,15 +46,12 @@ export default function Receipt() {
       <Divider borderColor="var(--neutral-800)" />
       <p className="total-cost-details space-between">
         <FancyText tag="span" text="TOTAL PAID" className="total-cost-title" />
-        <FancyText tag="span" text="€730.40" className="total-cost" />
+        <FancyText tag="span" text="€ 730.40" className="total-cost" />
       </p>
       <div className="receipt-footer space-between">
         <FancyText tag="span" text="PAID · WISE · GBP" />
-        <img
-          src="../assets/images/icon-barcode.svg"
-          alt="barcode"
-          className="barcode"
-        />
+
+        <img src={barcodeIcon} alt="barcode" className="barcode" />
       </div>
     </div>
   );

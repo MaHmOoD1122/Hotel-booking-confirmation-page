@@ -1,0 +1,50 @@
+.welcome-card {
+  max-width: 42rem;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  background-image: linear-gradient(
+    to right top,
+    var(--terracotta-600) 60%,
+    var(--terracotta-400)
+  );
+  box-shadow: 0rem 2rem 2rem rgba(0, 0, 0, 0.1);
+  transform: rotate(5deg);
+  z-index: 10;
+}
+.welcome-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.welcome-card-body {
+  margin-block-end: 5rem;
+}
+
+.welcome-card-title {
+  font-size: 1.1rem;
+  font-family: var(--dm-mono);
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: var(--neutral-400);
+}
+.host-note {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  font-family: "Fraunces";
+  font-style: italic;
+  font-size: 2rem;
+  color: var(--sun-200);
+  margin-block-end: 2rem;
+}
+.host-name {
+  color: var(--sun-50);
+}
+.host-message {
+  font-family: var(--dm-sans);
+  color: var(--sun-50);
+  font-weight: 300;
+}
+.welcome-card-footer {
+  color: var(--neutral-200);
+}
