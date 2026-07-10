@@ -1,9 +1,21 @@
 .receipt-card {
-  max-width: 42rem;
-  padding: 1.5rem;
+  width: 40rem;
+  padding: 2.5rem;
   border-radius: 1.5rem;
   box-shadow: 0rem 2rem 2rem rgba(0, 0, 0, 0.1);
   transform: rotate(-5deg);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.receipt-card:hover {
+  transform: scale(1.05) translateX(-40px);
+  position: relative;
+  z-index: 20;
+}
+.receipt-card:active {
+  transform: scale(0.95);
+  position: relative;
+  z-index: 20;
 }
 .receipt-header {
   display: flex;

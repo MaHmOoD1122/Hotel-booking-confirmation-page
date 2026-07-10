@@ -1,20 +1,29 @@
 .welcome-card {
-  max-width: 42rem;
-  padding: 1.5rem;
+  width: 40rem;
+  padding: 2.2rem;
   border-radius: 1.5rem;
   background-image: linear-gradient(
     to right top,
     var(--terracotta-600) 60%,
     var(--terracotta-400)
   );
-  box-shadow: 0rem 2rem 2rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0rem 2rem 2rem rgb(232 127 4 / 25%);
   transform: rotate(5deg);
   z-index: 10;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.welcome-card:hover {
+  transform: scale(1.05) translateX(40px);
+}
+.welcome-card:active {
+  transform: scale(0.95);
 }
 .welcome-card-header {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  margin-block-end: 3rem;
 }
 .welcome-card-body {
   margin-block-end: 5rem;
@@ -39,12 +48,23 @@
 }
 .host-name {
   color: var(--sun-50);
+  font-size: 4rem;
 }
 .host-message {
   font-family: var(--dm-sans);
   color: var(--sun-50);
   font-weight: 300;
+  font-size: 1.55rem;
 }
 .welcome-card-footer {
   color: var(--neutral-200);
+}
+.room-label {
+  font-size: 1.2rem;
+  font-family: "DM Sans";
+  font-weight: 300;
+  margin-block-end: 1.3rem;
+}
+.room-name {
+  font-size: 2.7rem;
 }

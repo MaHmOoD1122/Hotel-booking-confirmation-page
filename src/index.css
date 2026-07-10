@@ -38,6 +38,9 @@
   padding: 0;
   box-sizing: inherit;
 }
+*::selection {
+  background-color: var(--sun-500);
+}
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -54,4 +57,17 @@ body {
   grid-template-columns: 1fr;
   align-items: center;
   justify-items: center;
+}
+.main {
+  display: flex;
+  /* gap: 1rem; */
+}
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-content {
+  width: 100%;
+  padding: 3rem;
 }

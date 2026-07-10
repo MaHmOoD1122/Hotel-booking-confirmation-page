@@ -1,0 +1,68 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-end: 8rem;
+}
+.page-header-message {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.confirmation-message {
+  font-family: "DM Sans";
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: var(--neutral-600);
+}
+.welcome-message {
+  font-size: 3.5rem;
+}
+.welcome-message span {
+  color: var(--terracotta-600);
+  font-style: italic;
+  font-weight: 600;
+}
+.page-header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.print-btn {
+  padding: 1rem 1.5rem;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid var(--neutral-400);
+  border-radius: 2rem;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--neutral-700);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.print-btn:hover {
+  transform: scale(1.05);
+}
+.print-btn:active {
+  transform: scale(0.95);
+}
+.add-calender-btn {
+  padding: 1rem 1.5rem;
+  outline: none;
+  border: 1px solid var(--neutral-400);
+  border-radius: 2rem;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--neutral-400);
+  background-color: var(--neutral-800);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.add-calender-btn:hover {
+  transform: scale(1.05);
+}
+.add-calender-btn:active {
+  transform: scale(0.95);
+}
