@@ -2,9 +2,9 @@ import "./WelcomeCard.css";
 import Divider from "../Divider/Divider";
 import FancyText from "../FancyText";
 import sunIcon from "../assets/images/icon-sun.svg";
-export default function WelcomeCard() {
+export default function WelcomeCard({ className }) {
   return (
-    <div className="welcome-card">
+    <div className={`welcome-card ${className ?? ""}`}>
       <Divider type="dashed" borderColor={"var(--neutral-400)"} />
       <div className="welcome-card-header">
         <FancyText

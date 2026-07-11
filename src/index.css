@@ -52,22 +52,13 @@ body {
   background-color: var(--neutral-100);
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-  justify-items: center;
-}
 .main {
   display: flex;
   /* gap: 1rem; */
 }
-.cards {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 .main-content {
   width: 100%;
   padding: 3rem;
+  margin-left: 24rem;
 }

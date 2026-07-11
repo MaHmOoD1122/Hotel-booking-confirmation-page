@@ -1,0 +1,43 @@
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  position: relative;
+  cursor: pointer;
+}
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block-end: 2rem;
+}
+.cards-container-message {
+  display: flex;
+  gap: 1rem;
+  font-family: "DM Mono";
+  color: var(--neutral-600);
+}
+.sun-icon {
+  position: absolute;
+  top: 17%;
+  left: 37%;
+  z-index: -10;
+  transform: translate(50%, 50%);
+}
+.cards-container:hover .sun-icon {
+  display: inline-block;
+}
+
+.cards-container:hover .receipt-card {
+  transform: rotate(5deg) scale(1.05) translateX(-90px);
+  position: relative;
+  z-index: 20;
+}
+
+.cards-container:hover .welcome-card {
+  transform: rotate(-5deg) scale(1.05) translateX(90px);
+  position: relative;
+  z-index: 20;
+}

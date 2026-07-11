@@ -6,25 +6,42 @@ import houseIcon from "../assets/images/icon-house.svg";
 import pinIcon from "../assets/images/icon-pin.svg";
 import breakfastOutlineIcon from "../assets/images/icon-breakfast-outline.svg";
 import mailIcon from "../assets/images/icon-mail.svg";
+import FancyText from "../FancyText";
+import weatherIcon from "../assets/images/icon-weather.svg";
 export default function SideBar() {
   return (
     <aside className="sidebar">
-      <a href="#" className="logo-link">
-        <img src={logo} alt="The logo" className="logo-img" />
-      </a>
-      <Divider type="solid" borderColor="var(--neutral-400)" />
-      <ul className="sidebar-list">
-        <SideBarItem
-          icon={bedIcon}
-          text="Your stay"
-          number={1}
-          className="active"
-        />
-        <SideBarItem icon={houseIcon} text="The house" />
-        <SideBarItem icon={pinIcon} text="Around town" />
-        <SideBarItem icon={breakfastOutlineIcon} text="Breakfast" />
-        <SideBarItem icon={mailIcon} text="Messages" />
-      </ul>
+      <div className="sidebar-top">
+        <a href="#" className="logo-link">
+          <img src={logo} alt="The logo" className="logo-img" />
+        </a>
+        <Divider type="solid" borderColor="var(--neutral-400)" />
+        <ul className="sidebar-list">
+          <SideBarItem
+            icon={bedIcon}
+            text="Your stay"
+            number={1}
+            className="active"
+          />
+          <SideBarItem icon={houseIcon} text="The house" />
+          <SideBarItem icon={pinIcon} text="Around town" />
+          <SideBarItem icon={breakfastOutlineIcon} text="Breakfast" />
+          <SideBarItem icon={mailIcon} text="Messages" />
+        </ul>
+      </div>
+      <div className="sidebar-bottom">
+        <div className="weather-details">
+          <FancyText tag="p" text="TODAY IN CASSIS" className="region" />
+          <FancyText tag="p" text="27°" className="tempareture" />
+          <FancyText
+            tag="p"
+            text="Sunny · light breeze"
+            className="descripe-weather"
+          />
+          <img src={weatherIcon} alt="weather icon" className="weather-icon" />
+        </div>
+      </div>
+      <Divider type="dashed" borderColor="var(--neutral-400)" />
     </aside>
   );
 }

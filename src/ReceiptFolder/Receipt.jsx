@@ -2,9 +2,9 @@ import Divider from "../Divider/Divider";
 import FancyText from "../FancyText";
 import "./Receipt.css";
 import barcodeIcon from "../assets/images/icon-barcode.svg";
-export default function Receipt() {
+export default function Receipt({ className }) {
   return (
-    <div className="receipt-card">
+    <div className={`receipt-card ${className ?? ""}`}>
       <div className="receipt-header">
         <div className="header-left">
           <FancyText tag="p" text="RECEIPT" className="header-title" />

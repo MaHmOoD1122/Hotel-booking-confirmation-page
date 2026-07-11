@@ -7,18 +7,14 @@
     var(--terracotta-600) 60%,
     var(--terracotta-400)
   );
-  box-shadow: 0rem 2rem 2rem rgb(232 127 4 / 25%);
-  transform: rotate(5deg);
+  box-shadow: 0rem 1rem 1rem rgb(232 127 4 / 25%);
+  transform: rotate(3deg);
+  margin: -0.25rem;
   z-index: 10;
   cursor: pointer;
   transition: all 0.3s;
 }
-.welcome-card:hover {
-  transform: scale(1.05) translateX(40px);
-}
-.welcome-card:active {
-  transform: scale(0.95);
-}
+
 .welcome-card-header {
   display: flex;
   align-items: flex-start;
