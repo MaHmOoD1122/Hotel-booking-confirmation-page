@@ -54,11 +54,12 @@ body {
 
 .main {
   display: flex;
-  /* gap: 1rem; */
+  width: 100%;
+  min-height: 100vh;
 }
 
 .main-content {
   width: 100%;
-  padding: 3rem;
-  margin-left: 24rem;
+  padding: 4rem;
+  margin-left: 27rem;
 }

@@ -84,7 +84,7 @@
   color: var(--neutral-600);
   letter-spacing: 1px;
 }
-.temparature {
+.temperature {
   font-family: "Fraunces";
   font-size: 3rem;
 }
@@ -92,4 +92,17 @@
   font-family: "DM Sans";
   color: var(--neutral-800);
   letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+.copyright-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: "DM Mono";
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  color: var(--neutral-600);
+}
+.footer-address {
+  font-style: normal;
 }

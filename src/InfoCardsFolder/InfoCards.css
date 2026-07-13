@@ -1,0 +1,117 @@
+.info-cards-container {
+  display: flex;
+  gap: 2rem;
+  margin-block-start: 4rem;
+}
+.info-card {
+  flex: 1;
+  background-color: var(--neutral-50);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--neutral-400);
+}
+.info-card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-block-end: 1.7rem;
+  align-items: center;
+}
+.arrival-header {
+  color: var(--terracotta-600);
+}
+.wifi-header {
+  color: var(--blue-500);
+}
+.breakfast-header {
+  color: var(--rose-500);
+}
+.info-card-type {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.info-card-title {
+  font-family: "DM Mono";
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.icon {
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+}
+.arrival-icon {
+  background-color: var(--terracotta-600);
+}
+.wifi-icon {
+  background-color: var(--blue-500);
+}
+.breakfast-icon {
+  background-color: var(--rose-500);
+}
+.info-card-number {
+  font-size: 2rem;
+  font-family: "Fraunces";
+}
+.process {
+  font-family: "Fraunces";
+  font-size: 2rem;
+  margin-block-end: 1rem;
+}
+.helper-detail {
+  color: var(--neutral-600);
+  font-family: "DM Sans";
+  display: block;
+  font-size: 1.25rem;
+  margin-block-end: 1.6rem;
+}
+.info-card-details {
+  color: var(--neutral-700);
+  font-family: "DM Sans";
+  font-size: 1.3rem;
+}
+
+.wifi-body {
+  display: flex;
+  flex-direction: column;
+}
+.wifi-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.2rem;
+  background-color: var(--neutral-200);
+  font-size: 1.3rem;
+  align-items: center;
+  border-radius: 0.8rem;
+  gap: 0.5rem;
+  font-family: "DM Sans";
+}
+.network-details {
+  margin-block-end: 0.5rem;
+}
+.wifi-detail-type {
+  font-family: "DM Sans";
+  letter-spacing: 1px;
+  color: var(--neutral-600);
+}
+.password-part {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.copy-btn {
+  background-color: transparent;
+  outline: none;
+  font-size: 1.1rem;
+  border: 1px solid var(--neutral-600);
+  padding: 0.25rem 0.6rem;
+  border-radius: 1rem;
+  color: var(--neutral-600);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.copy-btn:hover {
+  transform: scale(1.05);
+}
+.copy-btn:active {
+  transform: scale(0.95);
+}

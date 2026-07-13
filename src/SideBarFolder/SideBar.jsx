@@ -29,10 +29,10 @@ export default function SideBar() {
           <SideBarItem icon={mailIcon} text="Messages" />
         </ul>
       </div>
-      <div className="sidebar-bottom">
+      <footer className="sidebar-bottom">
         <div className="weather-details">
           <FancyText tag="p" text="TODAY IN CASSIS" className="region" />
-          <FancyText tag="p" text="27°" className="tempareture" />
+          <FancyText tag="p" text="27°" className="temperature" />
           <FancyText
             tag="p"
             text="Sunny · light breeze"
@@ -40,8 +40,15 @@ export default function SideBar() {
           />
           <img src={weatherIcon} alt="weather icon" className="weather-icon" />
         </div>
-      </div>
-      <Divider type="dashed" borderColor="var(--neutral-400)" />
+        <Divider type="dashed" borderColor="var(--neutral-400)" />
+        <div className="copyright-container">
+          <p className="est-date">EST. 1987</p>
+          <address class="footer-address">
+            MAISON SOLEIL · 12 RUE DES OLIVIERS · CASSIS
+          </address>
+          <p class="copyright">&copy; 2026 MAISON SOLEIL</p>
+        </div>
+      </footer>
     </aside>
   );
 }
