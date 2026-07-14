@@ -3,24 +3,46 @@ import "./InfoCards.css";
 import keyIcon from "../assets/images/icon-key.svg";
 import wifiIcon from "../assets/images/icon-wifi.svg";
 import breakfastIcon from "../assets/images/icon-breakfast.svg";
+import { useState } from "react";
 
-const WifiBody = () => (
-  <div className="wifi-body">
-    <p className="process">Le Soleil · Guest</p>
-    <small className="helper-detail">Password below</small>
-    <div className="network-details wifi-details">
-      <p className="wifi-detail-type">NETWORK</p>
-      <p>Le Soleil · Guest</p>
-    </div>
-    <div className="password-details wifi-details">
-      <p className="wifi-detail-type">PASSWORD</p>
-      <div className="password-part">
-        <p className="password">soleil-2026</p>
-        <button className="copy-btn">COPY</button>
+const WifiBody = () => {
+  const [copied, setCopied] = useState(false);
+  const passwordText = "soleil-2026";
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(passwordText);
+      setCopied(true);
+      setTimeout(() => {
+        setCopied(false);
+      }, 2000);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+  return (
+    <div className="wifi-body">
+      <p className="process">Le Soleil · Guest</p>
+      <small className="helper-detail">Password below</small>
+      <div className="network-details wifi-details">
+        <p className="wifi-detail-type">NETWORK</p>
+        <p>Le Soleil · Guest</p>
+      </div>
+      <div className="password-details wifi-details">
+        <p className="wifi-detail-type">PASSWORD</p>
+        <div className="password-part">
+          <p className="password">{passwordText}</p>
+          <button
+            className={`copy-btn ${copied ? "copied" : ""}`}
+            onClick={handleCopy}
+          >
+            {copied ? "COPIED" : "COPY"}
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 const TextBody = ({ process, helperDetail, details }) => (
   <>
     <p className="process">{process}</p>

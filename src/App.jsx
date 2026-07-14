@@ -1,6 +1,3 @@
-import Button from "./Button";
-import FancyText from "./FancyText";
-
 import PageHeader from "./PageHeader/PageHeader";
 import SideBar from "./SideBarFolder/SideBar";
 import CardsContainer from "./CardsContainer/CardsContainer";

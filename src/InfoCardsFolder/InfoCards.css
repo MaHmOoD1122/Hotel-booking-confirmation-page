@@ -115,3 +115,7 @@
 .copy-btn:active {
   transform: scale(0.95);
 }
+.copied {
+  border: 1px solid #22c422;
+  color: #22c422;
+}
