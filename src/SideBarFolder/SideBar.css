@@ -1,15 +1,17 @@
 .sidebar {
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 27rem;
+  height: 100dvh;
+  margin-right: 5rem;
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  top: 0%;
-  left: 0%;
-  height: 100vh;
-  width: 27rem;
   padding: 1.5rem;
-  z-index: 100;
   border-right: 1px solid var(--neutral-400);
+  background-color: var(--neutral-100);
 }
 .sidebar:scroll .logo-link {
   display: block;
@@ -105,4 +107,13 @@
 }
 .footer-address {
   font-style: normal;
+}
+@media (max-width: 650px) {
+  .sidebar {
+    display: none;
+    /* width: 100%; */
+  }
+  .mobile-navbar {
+    display: block;
+  }
 }

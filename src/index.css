@@ -55,11 +55,62 @@ body {
 .main {
   display: flex;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .main-content {
-  width: 100%;
+  flex-grow: 1;
   padding: 4rem;
-  margin-left: 27rem;
+}
+.mobile-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  border-bottom: 1px solid var(--neutral-400);
+}
+.menu-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  mask-image: url("./assets/images/icon-menu.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  background-color: var(--neutral-600);
+}
+.menu-btn {
+  background: none;
+  outline: none;
+  border: 1px solid var(--neutral-400);
+  display: flex;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+}
+.menu-btn:hover {
+  transform: scale(1.05);
+}
+.menu-btn:active {
+  transform: scale(0.95);
+}
+.hidden {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .main {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    min-height: 100dvh;
+  }
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: -1;
+  }
 }
